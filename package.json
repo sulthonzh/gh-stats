@@ -1,0 +1,18 @@
+{
+  "name": "gh-stats",
+  "version": "1.0.0",
+  "description": "See your GitHub repos at a glance — stars, forks, issues, last activity. Uses gh CLI, zero deps.",
+  "bin": {
+    "gh-stats": "./cli.js"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node --test test/test.mjs"
+  },
+  "keywords": ["github", "stats", "cli", "gh", "repos"],
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
