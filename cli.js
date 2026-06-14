@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 import { parseArgs } from './src/args.js';
-import { fetchRepos } from './src/api.js';
+import { fetchRepos, ghAvailable } from './src/api.js';
 import { formatText, formatJSON, formatMarkdown } from './src/format.js';
-import { ghAvailable } from './src/api.js';
 
 async function main() {
   const args = parseArgs(process.argv.slice(2));
@@ -37,13 +36,10 @@ Options:
       process.exit(1);
     }
 
-    // Sort
     const sorted = sortRepos(repos, args.sort);
 
-    // Limit
     const limited = args.top ? sorted.slice(0, args.top) : sorted;
 
-    // Format
     if (args.json) {
       console.log(formatJSON(limited));
     } else if (args.markdown) {

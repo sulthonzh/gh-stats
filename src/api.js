@@ -21,7 +21,6 @@ export async function fetchRepos({ user, includeForks = false } = {}) {
   const { stdout } = await run('gh', args);
   const repos = JSON.parse(`[${stdout.trim().replace(/\n/g, ',')}]`);
 
-  // Add activity level
   const now = Date.now();
   return repos
     .filter(r => includeForks || !r.fork)
