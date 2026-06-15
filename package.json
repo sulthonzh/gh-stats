@@ -9,10 +9,19 @@
   "scripts": {
     "test": "node --test test/test.mjs"
   },
-  "keywords": ["github", "stats", "cli", "gh", "repos"],
+  "keywords": [
+    "github",
+    "stats",
+    "cli",
+    "gh",
+    "repos"
+  ],
   "type": "module",
   "license": "MIT",
   "engines": {
     "node": ">=18"
-  }
+  },
+  "files": "[\"cli.js\",\"src/\",\"README.md\",\"LICENSE\"]",
+  "author": "{\"name\":\"Sulthonzh\",\"email\":\"sulthonzh@users.noreply.github.com\"}",
+  "publishConfig": "{\"access\":\"public\"}"
 }
