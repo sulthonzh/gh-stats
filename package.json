@@ -21,7 +21,14 @@
   "engines": {
     "node": ">=18"
   },
-  "files": "[\"cli.js\",\"src/\",\"README.md\",\"LICENSE\"]",
+  "files": [
+    "cli.js",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
   "author": "{\"name\":\"Sulthonzh\",\"email\":\"sulthonzh@users.noreply.github.com\"}",
-  "publishConfig": "{\"access\":\"public\"}"
+  "publishConfig": {
+    "access": "public"
+  }
 }
